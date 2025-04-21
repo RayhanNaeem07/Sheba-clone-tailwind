@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
       rel="stylesheet"
     />
-
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -20,15 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="icon" type="image/x-icon" href="./images/logo.png" />
-
     <!-- Internal css -->
     <link rel="stylesheet" href="style.css" />
-
     <title>Sheba</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Header start -->
     <header class="header-area bg-white sticky top-0">
       <div class="header-container flex justify-around py-2 items-center">
@@ -111,27 +106,22 @@
         <img src="./images/hf1.jpg " alt="" class="mx-auto" />
         <p class="mt-2 font-medium">AC Repair Services</p>
       </div>
-
       <div class="service-type">
         <img src="./images/hf2.jpg" alt="" class="mx-auto" />
         <p class="mt-2 font-medium">Appliance Repair</p>
       </div>
-
       <div class="service-type">
         <img src="./images/hf3.jpg" alt="" class="mx-auto" />
         <p class="mt-2 font-medium">Cleaning Solution</p>
       </div>
-
       <div class="service-type">
         <img src="./images/hf4.jpg" alt="" class="mx-auto" />
         <p class="mt-2 font-medium">Beauty & Wellness</p>
       </div>
-
       <div class="service-type">
         <img src="./images/hf5.jpg" alt="" class="mx-auto" />
         <p class="mt-2 font-medium">Shifting</p>
       </div>
-
       <div class="service-type">
         <img src="./images/hf6.jpg" alt="" class="mx-auto" />
         <p class="mt-2 font-medium">Sheba Shop</p>
@@ -144,7 +134,6 @@
     </div>
 
     <!-- Services gallery start -->
-
     <section class="gallery-container px-55">
       <h1 class="py-8 font-semibold text-2xl">For Your Home</h1>
       <div class="gallery-cart-container flex gap-x-8">
@@ -152,23 +141,19 @@
           <img src="./images/h2.jpg" alt="" class="rounded-lg" />
           <p class="py-4 font-semibold">Plumbing & Sanitary Services</p>
         </div>
-
         <div class="gallery-cart">
           <img src="./images/h10.png" alt="" class="rounded-lg" />
           <p class="py-4 font-semibold">House Shifting Services</p>
         </div>
-
         <div class="gallery-cart">
           <img src="./images/h4.jpg" alt="" class="rounded-lg" />
           <p class="py-4 font-semibold">Home Cleaning</p>
         </div>
-
         <div class="gallery-cart">
           <img src="./images/h3.png" alt="" class="rounded-lg" />
           <p class="py-4 font-semibold">Gas Stove/Burner Services</p>
         </div>
       </div>
-
       <!-- Recommended start-->
       <h1 class="py-8 font-semibold text-2xl mt-8">Recommended</h1>
       <div class="gallery-cart-container flex gap-x-8">
@@ -176,17 +161,14 @@
           <img src="./images/r1.jpg" alt="" class="rounded-lg" />
           <p class="py-4 font-semibold">AC Servicing</p>
         </div>
-
         <div class="gallery-cart">
           <img src="./images/h4.jpg" alt="" class="rounded-lg" />
           <p class="py-4 font-semibold">Home Cleaning</p>
         </div>
-
         <div class="gallery-cart">
           <img src="./images/r2.jpg" alt="" class="rounded-lg" />
           <p class="py-4 font-semibold">Salon Care</p>
         </div>
-
         <div class="gallery-cart">
           <img src="./images/r4.jpg" alt="" class="rounded-lg" />
           <p class="py-4 font-semibold">On Demand Driver</p>
@@ -194,17 +176,14 @@
       </div>
       <!-- REcommended end -->
     </section>
-
     <!-- Services gallery end -->
 
     <!-- Why choose us section start -->
-    <section
-      class="why-choose-us-area px-55 text-sm font-medium mt-20 mb-1 bg-[#fafbfc]"
-    >
+    <section class="why-choose-us-area px-55 mt-20 mb-1 bg-[#fafbfc]">
       <div class="why-choose-us-container py-12">
         <div class="why-choose-us-heading flex items-center">
           <div class="hline w-8 h-[1px] bg-black"></div>
-          <p class="pl-4">WHY CHOOSE US</p>
+          <p class="pl-4 text-sm font-medium">WHY CHOOSE US</p>
         </div>
         <p class="font-semibold text-3xl py-6">
           Because we care about your safety..
@@ -236,7 +215,7 @@
               <h1 class="px-4">Ensuring Gloves</h1>
             </div>
           </div>
-          <div >
+          <div>
             <img src="./images/why-choose-us.jpg" alt="" />
           </div>
         </div>
@@ -267,10 +246,141 @@
       </div>
     </section>
     <!-- Stats Counter end -->
-    
-    <!-- How it works start -->
 
+    <!-- How it works start -->
+    <section class="container px-4 sm:px-6 lg:px-55 mx-auto pb-20">
+      <!-- Section Header -->
+      <div class="flex items-center pt-12">
+        <div class="w-8 h-[1px] bg-black"></div>
+        <p class="pl-4 text-sm font-medium">HOW IT WORKS</p>
+      </div>
+      <h2 class="font-semibold text-3xl py-6">Easiest way to get a service</h2>
+
+      <!-- Content Container -->
+      <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+        <!-- Video Embed -->
+        <div class="w-full lg:w-1/2">
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe
+              class="w-full h-full min-h-[315px]"
+              src="https://www.youtube.com/embed/OMW0BfVYSOI?si=_ItCDUw1xUklCR1t"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Steps Container -->
+        <div class="w-full lg:w-1/2">
+          <!-- Step 1 -->
+          <div class="flex items-start pb-10">
+            <div
+              class="mt-2 flex-shrink-0 w-12 h-12 rounded-full bg-[#0ca3ae] flex items-center justify-center font-semibold text-2xl text-white"
+            >
+              1
+            </div>
+            <div class="pl-4">
+              <h3 class="text-xl font-semibold pb-2">Select the Service</h3>
+              <p class="text-sm">
+                Pick the service you are looking for - from the website or the
+                app.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex items-start pb-10">
+            <div
+              class="mt-2 flex-shrink-0 w-12 h-12 rounded-full bg-[#0ca3ae] flex items-center justify-center font-semibold text-2xl text-white"
+            >
+              2
+            </div>
+            <div class="pl-4">
+              <h3 class="text-xl font-semibold pb-2">Pick Your Schedule</h3>
+              <p class="text-sm">
+                Pick your convenient date and time to avail the service. Pick
+                the service provider based on their rating.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex items-start pb-10">
+            <div
+              class="mt-2 flex-shrink-0 w-12 h-12 rounded-full bg-[#0ca3ae] flex items-center justify-center font-semibold text-2xl text-white"
+            >
+              3
+            </div>
+            <div class="pl-4">
+              <h3 class="text-xl font-semibold pb-2">
+                Place Your Order & Relax
+              </h3>
+              <p class="text-sm">
+                Review and place the order. Now just sit back and relax. We'll
+                assign the expert service provider's schedule for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- How it works end -->
+
+    <!-- Happy faces start -->
+    <section class="happy-faces-area px-55 bg-[#f4f5f8]">
+      <div class="flex items-center pt-12">
+        <div class="w-8 h-[1px] bg-black"></div>
+        <p class="pl-4 text-sm font-medium">SOME HAPPY FACES</p>
+      </div>
+      <h2 class="font-semibold text-3xl py-6">
+        Real Happy Customers, Real Stories
+      </h2>
+
+      <div class="flex items-center">
+        <div class="px-8">
+          <!-- Quote Icon -->
+          <div class="text-[#2b2f2f] text-6xl  ">“</div>
+
+          <!-- Testimonial Text -->
+
+          <div class="mt-[-40px] ">
+            <p class="text-xl text-gray-700 mb-6 indent-8">
+               Such service platforms are available in other countries. I've
+               personally used those when I was abroad. I'm very pleased that
+               such a portal is available here in Bangladesh as well. Thank you
+               Sheba.Xyz.
+            </p>
+          </div>
+
+          <!-- Author Info -->
+          <div>
+            <p class="font-semibold text-gray-900">- Zabeen Yusuf Nur</p>
+            <p class="text-sm text-gray-900 py-4">IT Consultant, Australia</p>
+          </div>
+        </div>
+
+        <div class="my-6 ">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Ey0ESUxWTL0?si=pIPIwn7SxtwN765T"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Happy faces end -->
+
+    <!-- Download app start -->
+
+    <!-- Download app end -->
+
     <!-- Footer Start -->
     <footer class="footer-area">
       <div class="footer-top grid grid-cols-4 mx-55">
@@ -316,7 +426,6 @@
       </div>
     </footer>
     <!-- Footer End -->
-
     <!-- JS -->
     <script src="app.js"></script>
   </body>

@@ -14,5 +14,8 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4",
     "vite": "^6.3.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2"
   }
 }
