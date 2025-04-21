@@ -25,7 +25,7 @@
   </head>
   <body class="overflow-x-hidden">
     <!-- Header start -->
-    <header class="header-area bg-white sticky top-0">
+    <header class="header-area bg-white sticky top-0 shadow-md">
       <div class="header-container flex justify-around py-2 items-center">
         <div class="header-logo">
           <img
@@ -341,16 +341,16 @@
       <div class="flex items-center">
         <div class="px-8">
           <!-- Quote Icon -->
-          <div class="text-[#2b2f2f] text-6xl  ">“</div>
+          <div class="text-[#2b2f2f] text-6xl">“</div>
 
           <!-- Testimonial Text -->
 
-          <div class="mt-[-40px] ">
+          <div class="mt-[-40px]">
             <p class="text-xl text-gray-700 mb-6 indent-8">
-               Such service platforms are available in other countries. I've
-               personally used those when I was abroad. I'm very pleased that
-               such a portal is available here in Bangladesh as well. Thank you
-               Sheba.Xyz.
+              Such service platforms are available in other countries. I've
+              personally used those when I was abroad. I'm very pleased that
+              such a portal is available here in Bangladesh as well. Thank you
+              Sheba.Xyz.
             </p>
           </div>
 
@@ -361,7 +361,7 @@
           </div>
         </div>
 
-        <div class="my-6 ">
+        <div class="my-6">
           <iframe
             width="560"
             height="315"
@@ -378,42 +378,133 @@
     <!-- Happy faces end -->
 
     <!-- Download app start -->
+    <section class="download-app-area py-8">
+      <div class="flex items-center mx-55">
+        <div><img src="./images/app-download.png" alt="" /></div>
+        <div>
+          <div class="flex items-center pt-12">
+            <div class="w-8 h-[1px] bg-black"></div>
+            <p class="pl-4 text-md font-medium">Download Our App</p>
+          </div>
+          <h2 class="font-semibold text-3xl py-6">
+            Any Service, Any Time, Anywhere.
+          </h2>
+          <p class="pb-10">
+            Give us your mobile number. You’ll get an SMS with the app download
+            link.
+          </p>
 
+          <div
+            class="input-mobile-number rounded-md border-1 border-gray-300 h-12 w-[560px]"
+          >
+            <input
+              type="number"
+              placeholder="Type your mobile number"
+              class="number-field focus:outline-none p-2 ml-6 w-[360px]"
+            />
+            <button
+              class="bg-[#DB6D9B] py-3 px-9 h-12 ml-[2px] rounded-r-md text-white font-semibold"
+            >
+              Get the app
+            </button>
+          </div>
+
+          <div class="flex gap-x-6 my-8">
+            <div><img src="./images/play-store.png" alt="" class="w-45" /></div>
+            <div><img src="./images/app-store.png" alt="" class="w-45" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Download app end -->
 
+    <!-- Contact start -->
+    <section class="contact-area bg-[#f4f5f8] h-[206px]">
+      <div class="flex mx-55 justify-evenly">
+        <div class="py-10">
+          <h1 class="font-semibold py-4 text-2xl">
+            Can’t find your desired service? Let us know 24/7 in 16516.
+          </h1>
+          <div class="py-2">
+            <button
+              class="bg-[#c71f66] py-3 px-8 text-white font-semibold rounded-lg"
+            >
+              Request a service
+            </button>
+            <button
+              class="py-3 px-16 ml-2 text-[#c71f66] border-1 font-semibold rounded-lg hover:bg-[#c71f66] hover:text-white"
+            >
+              <i class="fa-solid fa-phone mr-4"></i>16516
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./images/service-request.png" alt="" class="mt-[-117px]" />
+        </div>
+      </div>
+    </section>
+    <!-- Contact end -->
+
     <!-- Footer Start -->
-    <footer class="footer-area">
-      <div class="footer-top grid grid-cols-4 mx-55">
-        <div>
-          <h1>CONTACT</h1>
+    <footer class="footer-area bg-[#ebecef]">
+      <div class="footer-top grid grid-cols-5 mx-50 pt-10 pb-20 text-sm">
+        <div >
+          <h1 class="font-bold pb-4">CONTACT</h1>
+          <div class="py-3">
+            <p>16516 / 8809643240103</p>
+            <p>info@sheba.xyz</p>
+          </div>
+
+          <div>
+            <h1 class="text-gray-700">Corporate Address</h1>
+            <p>
+              M&S Tower, Plot: 2, Road: 11, <br />
+              Block: H, Banani, Dhaka
+            </p>
+          </div>
+
+          <div>
+            <h1 class="font-bold py-3">Trade License No</h1>
+            <p>TRAD/DNCC/145647/2022</p>
+          </div>
         </div>
         <div>
-          <h1>OTHER PAGES</h1>
+          <h1 class="font-bold pb-4">OTHER PAGES</h1>
           <ul>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Help</a></li>
-            <li><a href="">Terms of use</a></li>
-            <li><a href="">Privacy Policy</a></li>
+            <li class="py-2"><a href="">Blog</a></li>
+            <li class="py-2"><a href="">Help</a></li>
+            <li class="py-2"><a href="">Terms of use</a></li>
+            <li class="py-2"><a href="">Privacy Policy</a></li>
             <li><a href="">Refund & Return Policy</a></li>
-            <li><a href="">Sitemap</a></li>
+            <li class="py-2"><a href="">Sitemap</a></li>
           </ul>
         </div>
         <div>
-          <h1>COMPANY</h1>
+          <h1 class="font-bold pb-4">COMPANY</h1>
           <ul>
-            <li><a href="">sManager</a></li>
-            <li><a href="">sBusiness</a></li>
-            <li><a href="">sDelivery</a></li>
-            <li><a href="">sBondhu</a></li>
+            <li class="py-2"><a href="">sManager</a></li>
+            <li class="py-2"><a href="">sBusiness</a></li>
+            <li class="py-2"><a href="">sDelivery</a></li>
+            <li class="py-2"><a href="">sBondhu</a></li>
           </ul>
         </div>
-        <div>
-          <h1>DOWNLOAD OUR APP</h1>
+        <div class="col-span-2 text-right">
+          <h1 class="font-bold pb-4">DOWNLOAD OUR APP</h1>
           <p>
             Tackle your to-do list wherever you are with our mobile app & make
             your life easy.
           </p>
+
+          <div class="flex gap-x-6 my-8 pl-14">
+            <div><img src="./images/play-store.png" alt="" class="w-45" /></div>
+            <div><img src="./images/app-store.png" alt="" class="w-45" /></div>
+          </div>
+        <div>
+
+        </div>   
         </div>
+
+    
       </div>
       <div class="footer-bottom bg-[#dfe0e3] py-6">
         <p class="text-center">
