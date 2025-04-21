@@ -30,10 +30,14 @@
   </head>
   <body>
     <!-- Header start -->
-    <header class="header-area bg-white">
+    <header class="header-area bg-white sticky top-0">
       <div class="header-container flex justify-around py-2 items-center">
         <div class="header-logo">
-          <img src="./images/WebsiteLogo.svg" alt="Company logo" class="cursor-pointer" />
+          <img
+            src="./images/WebsiteLogo.svg"
+            alt="Company logo"
+            class="cursor-pointer"
+          />
         </div>
         <div class="header-nav">
           <nav>
@@ -64,19 +68,254 @@
         <div
           class="bg-[url('/images/hero-cover.jpg')] h-[460px] bg-no-repeat bg-center"
         >
-          <h1 class="text-[3.5rem] text-white text-center pt-30 font-semibold">Your Personal Assistant</h1>
-          <p class="text-2xl text-white text-center mt-2 font-semibold">One-stop solution for your services. Order any service, anytime.</p>
+          <h1 class="text-[3.5rem] text-white text-center pt-30 font-semibold">
+            Your Personal Assistant
+          </h1>
+          <p class="text-2xl text-white text-center mt-2 font-semibold">
+            One-stop solution for your services. Order any service, anytime.
+          </p>
           <div class="location-search-box-container flex items-center">
-            <button class="bg-white px-14 py-4 mt-4 ml-95 rounded-lg font-semibold"> <i class="fa-solid fa-location-dot pr-2 text-[#c71f66] text-xl"></i> Gulshan</button>
-          <div class="search-box flex w-150 h-14 mt-4 bg-white ml-4 rounded-lg">
-            <input type="text" class="m-4 outline-none w-100 " placeholder="Find your service here e.g. AC,Car, Facial ...">
-            <div class="search-box-icon bg-[#c71f66] px-4 py-3 my-1 ml-28 rounded-lg cursor-pointer"><i class="fa-solid fa-magnifying-glass text-white "></i></div>
-          </div>
+            <button
+              class="bg-white px-14 py-4 mt-4 ml-95 rounded-lg font-semibold"
+            >
+              <i
+                class="fa-solid fa-location-dot pr-2 text-[#c71f66] text-xl"
+              ></i>
+              Gulshan
+            </button>
+            <div
+              class="search-box flex w-150 h-14 mt-4 bg-white ml-4 rounded-lg"
+            >
+              <input
+                type="text"
+                class="m-4 outline-none w-100"
+                placeholder="Find your service here e.g. AC,Car, Facial ..."
+              />
+              <div
+                class="search-box-icon bg-[#c71f66] px-4 py-3 my-1 ml-28 rounded-lg cursor-pointer"
+              >
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Hero section end -->
+
+    <!-- All Services slider start -->
+    <div
+      class="services-slider flex justify-between mx-50 rounded-xl mt-[-3.5rem] bg-white px-10 py-6 shadow-md"
+    >
+      <div class="service-type">
+        <img src="./images/hf1.jpg " alt="" class="mx-auto" />
+        <p class="mt-2 font-medium">AC Repair Services</p>
+      </div>
+
+      <div class="service-type">
+        <img src="./images/hf2.jpg" alt="" class="mx-auto" />
+        <p class="mt-2 font-medium">Appliance Repair</p>
+      </div>
+
+      <div class="service-type">
+        <img src="./images/hf3.jpg" alt="" class="mx-auto" />
+        <p class="mt-2 font-medium">Cleaning Solution</p>
+      </div>
+
+      <div class="service-type">
+        <img src="./images/hf4.jpg" alt="" class="mx-auto" />
+        <p class="mt-2 font-medium">Beauty & Wellness</p>
+      </div>
+
+      <div class="service-type">
+        <img src="./images/hf5.jpg" alt="" class="mx-auto" />
+        <p class="mt-2 font-medium">Shifting</p>
+      </div>
+
+      <div class="service-type">
+        <img src="./images/hf6.jpg" alt="" class="mx-auto" />
+        <p class="mt-2 font-medium">Sheba Shop</p>
+      </div>
+    </div>
+    <!-- All Services slider end -->
+
+    <div class="emi mx-55 my-8">
+      <img src="./images/emi.jpg" alt="" />
+    </div>
+
+    <!-- Services gallery start -->
+
+    <section class="gallery-container px-55">
+      <h1 class="py-8 font-semibold text-2xl">For Your Home</h1>
+      <div class="gallery-cart-container flex gap-x-8">
+        <div class="gallery-cart">
+          <img src="./images/h2.jpg" alt="" class="rounded-lg" />
+          <p class="py-4 font-semibold">Plumbing & Sanitary Services</p>
+        </div>
+
+        <div class="gallery-cart">
+          <img src="./images/h10.png" alt="" class="rounded-lg" />
+          <p class="py-4 font-semibold">House Shifting Services</p>
+        </div>
+
+        <div class="gallery-cart">
+          <img src="./images/h4.jpg" alt="" class="rounded-lg" />
+          <p class="py-4 font-semibold">Home Cleaning</p>
+        </div>
+
+        <div class="gallery-cart">
+          <img src="./images/h3.png" alt="" class="rounded-lg" />
+          <p class="py-4 font-semibold">Gas Stove/Burner Services</p>
+        </div>
+      </div>
+
+      <!-- Recommended start-->
+      <h1 class="py-8 font-semibold text-2xl mt-8">Recommended</h1>
+      <div class="gallery-cart-container flex gap-x-8">
+        <div class="gallery-cart">
+          <img src="./images/r1.jpg" alt="" class="rounded-lg" />
+          <p class="py-4 font-semibold">AC Servicing</p>
+        </div>
+
+        <div class="gallery-cart">
+          <img src="./images/h4.jpg" alt="" class="rounded-lg" />
+          <p class="py-4 font-semibold">Home Cleaning</p>
+        </div>
+
+        <div class="gallery-cart">
+          <img src="./images/r2.jpg" alt="" class="rounded-lg" />
+          <p class="py-4 font-semibold">Salon Care</p>
+        </div>
+
+        <div class="gallery-cart">
+          <img src="./images/r4.jpg" alt="" class="rounded-lg" />
+          <p class="py-4 font-semibold">On Demand Driver</p>
+        </div>
+      </div>
+      <!-- REcommended end -->
+    </section>
+
+    <!-- Services gallery end -->
+
+    <!-- Why choose us section start -->
+    <section
+      class="why-choose-us-area px-55 text-sm font-medium mt-20 mb-1 bg-[#fafbfc]"
+    >
+      <div class="why-choose-us-container py-12">
+        <div class="why-choose-us-heading flex items-center">
+          <div class="hline w-8 h-[1px] bg-black"></div>
+          <p class="pl-4">WHY CHOOSE US</p>
+        </div>
+        <p class="font-semibold text-3xl py-6">
+          Because we care about your safety..
+        </p>
+        <div class="grid grid-cols-2">
+          <div class="grid grid-cols-2 grid-rows-2 gap-6 px-6">
+            <div
+              class="why-choose-us-services flex items-center bg-white px-8 shadow-sm rounded-lg"
+            >
+              <img src="./images/f1.jpg" alt="" class="w-16" />
+              <h1 class="px-4">Ensuring Masks</h1>
+            </div>
+            <div
+              class="why-choose-us-services flex items-center bg-white px-8 shadow-sm rounded-lg"
+            >
+              <img src="./images/f2.jpg" alt="" class="w-16" />
+              <h1 class="px-4">24/7 Support</h1>
+            </div>
+            <div
+              class="why-choose-us-services flex items-center bg-white px-8 shadow-sm rounded-lg"
+            >
+              <img src="./images/f3.jpg" alt="" class="w-16" />
+              <h1 class="px-4">Sanitizing Hands & Equipment</h1>
+            </div>
+            <div
+              class="why-choose-us-services flex items-center bg-white px-8 shadow-sm rounded-lg"
+            >
+              <img src="./images/f4.jpg" alt="" class="w-16" />
+              <h1 class="px-4">Ensuring Gloves</h1>
+            </div>
+          </div>
+          <div >
+            <img src="./images/why-choose-us.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why choose us section end -->
+
+    <!-- Stats Counter start -->
+    <section class="py-4 bg-[#f4f5f8]">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <!-- Stat 1 -->
+          <div class="p-6">
+            <p class="text-5xl font-semibold text-gray-600">15,000+</p>
+            <p class="mt-2 text-gray-600">Service Providers</p>
+          </div>
+          <!-- Stat 2 -->
+          <div class="p-6">
+            <p class="text-5xl font-semibold text-gray-600">2,00,000+</p>
+            <p class="mt-2 text-gray-600">Orders Served</p>
+          </div>
+          <!-- Stat 3 -->
+          <div class="p-6">
+            <p class="text-5xl font-semibold text-gray-600">1,00,000+</p>
+            <p class="mt-2 text-gray-600">5-Star Reviews</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Stats Counter end -->
+    
+    <!-- How it works start -->
+
+    <!-- How it works end -->
+    <!-- Footer Start -->
+    <footer class="footer-area">
+      <div class="footer-top grid grid-cols-4 mx-55">
+        <div>
+          <h1>CONTACT</h1>
+        </div>
+        <div>
+          <h1>OTHER PAGES</h1>
+          <ul>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Terms of use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Refund & Return Policy</a></li>
+            <li><a href="">Sitemap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1>COMPANY</h1>
+          <ul>
+            <li><a href="">sManager</a></li>
+            <li><a href="">sBusiness</a></li>
+            <li><a href="">sDelivery</a></li>
+            <li><a href="">sBondhu</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1>DOWNLOAD OUR APP</h1>
+          <p>
+            Tackle your to-do list wherever you are with our mobile app & make
+            your life easy.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom bg-[#dfe0e3] py-6">
+        <p class="text-center">
+          Copyright © 2025
+          <a href="" class="text-blue-600 font-medium"
+            >Sheba Platform Limited</a
+          >
+          | All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
 
     <!-- JS -->
     <script src="app.js"></script>
