@@ -25,77 +25,112 @@
   </head>
   <body class="overflow-x-hidden">
     <!-- Header start -->
-    <header class="header-area bg-white sticky top-0 shadow-md">
-      <div class="header-container flex justify-around py-2 items-center">
-        <div class="header-logo">
-          <img
-            src="./images/WebsiteLogo.svg"
-            alt="Company logo"
-            class="cursor-pointer"
-          />
-        </div>
-        <div class="header-nav">
-          <nav>
-            <ul class="nav-container flex gap-x-8">
-              <li>
-                <a
-                  href=""
-                  class="font-semibold hover:bg-[#c71f66] hover:text-[white] border-1 rounded-lg px-8 py-4 text-[#c71f66] transition duration-300 ease"
-                  >Sheba Pay</a
-                >
-              </li>
-              <li><a href="" class="font-semibold">All Services</a></li>
-              <button
-                class="font-semibold text[rgba(0, 0, 0, .9)] cursor-pointer"
+    <header class="bg-white sticky top-0 shadow-md z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-around gap-x-20 lg:gap-x-44 items-center py-2">
+          <!-- Logo -->
+          <div class="w-18  md:w-26">
+            <img
+              src="./images/WebsiteLogo.svg"
+              alt="Company logo"
+              class="w-full h-auto"
+            />
+          </div>
+
+          <!-- Single Navigation Container -->
+          <div class="mobile-menu md:contents">
+            <nav >
+              <ul
+                class="nav-container hidden md:flex items-center space-x-2 lg:space-x-4"
               >
-                Login
-              </button>
-            </ul>
-          </nav>
+                <li class="md:ml-6 lg:ml-8">
+                  <a
+                    href=""
+                    class="font-semibold ml-3 hover:bg-[#c71f66] hover:text-[white] md:border-1 rounded-lg md:px-8 md:py-4 text-[#c71f66] transition duration-300 ease"
+                    >Sheba Pay</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-semibold px-3 md:py-2 hover:text-[#c71f66] transition duration-300"
+                  >
+                    All Services
+                  </a>
+                </li>
+                <li>
+                  <button
+                    class="font-semibold text-gray-900 px-3 md:py-2 hover:text-[#c71f66] transition duration-300"
+                  >
+                    Login
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="md:hidden text-gray-700 focus:outline-none menu-toggle"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
         </div>
       </div>
     </header>
     <!-- Header end -->
 
     <!-- Hero section start -->
-    <div class="hero-area">
+    <section class="hero-area">
       <div class="hero-container">
         <div
-          class="bg-[url('/images/hero-cover.jpg')] h-[460px] bg-no-repeat bg-center"
+          class="bg-[url('/images/hero-cover.jpg')] bg-cover bg-no-repeat bg-center min-h-[400px] md:min-h-[460px] flex flex-col justify-center items-center px-4 py-16"
         >
-          <h1 class="text-[3.5rem] text-white text-center pt-30 font-semibold">
+          <!-- Heading -->
+          <h1
+            class="text-4xl md:text-5xl lg:text-[3.5rem] text-white text-center font-semibold mb-2 md:mb-4"
+          >
             Your Personal Assistant
           </h1>
-          <p class="text-2xl text-white text-center mt-2 font-semibold">
+
+          <!-- Subheading -->
+          <p
+            class="text-xl md:text-2xl text-white text-center font-semibold mx-auto"
+          >
             One-stop solution for your services. Order any service, anytime.
           </p>
-          <div class="location-search-box-container flex items-center">
-            <button
-              class="bg-white px-14 py-4 mt-4 ml-95 rounded-lg font-semibold"
-            >
-              <i
-                class="fa-solid fa-location-dot pr-2 text-[#c71f66] text-xl"
-              ></i>
-              Gulshan
-            </button>
-            <div
-              class="search-box flex w-150 h-14 mt-4 bg-white ml-4 rounded-lg"
-            >
-              <input
-                type="text"
-                class="m-4 outline-none w-100"
-                placeholder="Find your service here e.g. AC,Car, Facial ..."
-              />
-              <div
-                class="search-box-icon bg-[#c71f66] px-4 py-3 my-1 ml-28 rounded-lg cursor-pointer"
+
+          <!-- Search Container -->
+          <div class="max-w-4xl mt-6 md:mt-8 px-4">
+            <div class="flex flex-col md:flex-row gap-4">
+              <!-- Location Button -->
+              <button
+                class="bg-white px-6 py-3 w-50 ml-10 md:px-8 md:py-4 lg:px-12 rounded-lg font-semibold flex items-center justify-center whitespace-nowrap"
               >
-                <i class="fa-solid fa-magnifying-glass text-white"></i>
+                <i class="fas fa-location-dot pr-2 text-[#c71f66] text-lg"></i>
+                <span>Gulshan</span>
+              </button>
+
+              <!-- Search Box -->
+              <div
+                class="relative flex-grow flex bg-white rounded-lg w-70 lg:w-150"
+              >
+                <input
+                  type="text"
+                  class="w-full h-14 px-4 pr-10 rounded-lg outline-none placeholder:text-[0.7rem]"
+                  placeholder="Find your service here e.g. AC, Car, Facial..."
+                />
+                <button
+                  class="absolute right-1 top-1 bg-[#c71f66] px-4 py-3 rounded-lg cursor-pointer"
+                >
+                  <i class="fas fa-magnifying-glass text-white"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Hero section end -->
 
     <!-- All Services slider start -->
@@ -103,30 +138,31 @@
       class="services-slider flex justify-between mx-50 rounded-xl mt-[-3.5rem] bg-white px-10 py-6 shadow-md"
     >
       <div class="service-type">
-        <img src="./images/hf1.jpg " alt="" class="mx-auto" />
+        <img src="./images/hf2.jpg " alt="" class="mx-auto w-10" />
         <p class="mt-2 font-medium">AC Repair Services</p>
       </div>
       <div class="service-type">
-        <img src="./images/hf2.jpg" alt="" class="mx-auto" />
+        <img src="./images/hf3.jpg" alt="" class="mx-auto w-10" />
         <p class="mt-2 font-medium">Appliance Repair</p>
       </div>
       <div class="service-type">
-        <img src="./images/hf3.jpg" alt="" class="mx-auto" />
+        <img src="./images/hf6.jpg" alt="" class="mx-auto w-10" />
         <p class="mt-2 font-medium">Cleaning Solution</p>
       </div>
       <div class="service-type">
-        <img src="./images/hf4.jpg" alt="" class="mx-auto" />
+        <img src="./images/hf4.jpg" alt="" class="mx-auto w-10" />
         <p class="mt-2 font-medium">Beauty & Wellness</p>
       </div>
       <div class="service-type">
-        <img src="./images/hf5.jpg" alt="" class="mx-auto" />
+        <img src="./images/hf7.webp" alt="" class="mx-auto w-10" />
         <p class="mt-2 font-medium">Shifting</p>
       </div>
       <div class="service-type">
-        <img src="./images/hf6.jpg" alt="" class="mx-auto" />
+        <img src="./images/1731997266_tiwnn_52x52.webp" alt="" class="mx-auto w-10" />
         <p class="mt-2 font-medium">Sheba Shop</p>
       </div>
     </div>
+
     <!-- All Services slider end -->
 
     <div class="emi mx-55 my-8">
@@ -134,91 +170,122 @@
     </div>
 
     <!-- Services gallery start -->
-    <section class="gallery-container px-55">
-      <h1 class="py-8 font-semibold text-2xl">For Your Home</h1>
-      <div class="gallery-cart-container flex gap-x-8">
-        <div class="gallery-cart">
-          <img src="./images/h2.jpg" alt="" class="rounded-lg" />
-          <p class="py-4 font-semibold">Plumbing & Sanitary Services</p>
-        </div>
-        <div class="gallery-cart">
-          <img src="./images/h10.png" alt="" class="rounded-lg" />
-          <p class="py-4 font-semibold">House Shifting Services</p>
-        </div>
-        <div class="gallery-cart">
-          <img src="./images/h4.jpg" alt="" class="rounded-lg" />
-          <p class="py-4 font-semibold">Home Cleaning</p>
-        </div>
-        <div class="gallery-cart">
-          <img src="./images/h3.png" alt="" class="rounded-lg" />
-          <p class="py-4 font-semibold">Gas Stove/Burner Services</p>
-        </div>
+    <section class="px-4 py-8 max-w-7xl  lg:mx-50">
+      <!-- For Your Home Section -->
+      <h2 class="text-xl font-semibold mb-6 md:text-2xl">For Your Home</h2>
+      <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
+          <!-- Card 1 -->
+          <div class="bg-white  overflow-hidden ">
+              <img src="./images/h2.jpg" alt="Plumbing services" 
+                   class="w-full rounded-lg h-32 object-cover sm:h-36 md:h-40">
+              <p class=" text-sm text-center font-semibold sm:text-base md:pt-3">Plumbing & Sanitary Services</p>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="bg-white  overflow-hidden ">
+              <img src="./images/h10.png" alt="House shifting" 
+                   class="w-full rounded-lg h-32 object-cover sm:h-36 md:h-40">
+              <p class="text-center text-sm font-semibold sm:text-base md:p-4">House Shifting Services</p>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="bg-white  overflow-hidden ">
+              <img src="./images/h4.jpg" alt="Home cleaning" 
+                   class="w-full rounded-lg h-32 object-cover sm:h-36 md:h-40">
+              <p class="text-center text-sm font-semibold sm:text-base md:p-4">Home Cleaning</p>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="bg-white  overflow-hidden ">
+              <img src="./images/h3.png" alt="Gas stove services" 
+                   class="w-full rounded-lg h-32 object-cover sm:h-36 md:h-40">
+              <p class="text-center text-sm font-semibold sm:text-base md:p-4">Gas Stove/Burner Services</p>
+          </div>
       </div>
-      <!-- Recommended start-->
-      <h1 class="py-8 font-semibold text-2xl mt-8">Recommended</h1>
-      <div class="gallery-cart-container flex gap-x-8">
-        <div class="gallery-cart">
-          <img src="./images/r1.jpg" alt="" class="rounded-lg" />
-          <p class="py-4 font-semibold">AC Servicing</p>
-        </div>
-        <div class="gallery-cart">
-          <img src="./images/h4.jpg" alt="" class="rounded-lg" />
-          <p class="py-4 font-semibold">Home Cleaning</p>
-        </div>
-        <div class="gallery-cart">
-          <img src="./images/r2.jpg" alt="" class="rounded-lg" />
-          <p class="py-4 font-semibold">Salon Care</p>
-        </div>
-        <div class="gallery-cart">
-          <img src="./images/r4.jpg" alt="" class="rounded-lg" />
-          <p class="py-4 font-semibold">On Demand Driver</p>
-        </div>
+
+      <!-- Recommended Section -->
+      <h2 class="text-xl font-semibold mb-6 mt-8 md:text-2xl md:mt-12">Recommended</h2>
+      <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
+          <!-- Card 1 -->
+          <div class="bg-white  overflow-hidden ">
+              <img src="./images/r1.jpg" alt="AC servicing" 
+                   class="w-full rounded-lg h-32 object-cover sm:h-36 md:h-40">
+              <p class="text-center text-sm font-semibold sm:text-base md:p-4">AC Servicing</p>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="bg-white  overflow-hidden ">
+              <img src="./images/h4.jpg" alt="Home cleaning" 
+                   class="w-full rounded-lg h-32 object-cover sm:h-36 md:h-40">
+              <p class="text-center text-sm font-semibold sm:text-base md:p-4">Home Cleaning</p>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="bg-white  overflow-hidden ">
+              <img src="./images/r2.jpg" alt="Salon services" 
+                   class="w-full rounded-lg h-32 object-cover sm:h-36 md:h-40">
+              <p class="text-center text-sm font-semibold sm:text-base md:p-4">Salon Care</p>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="bg-white  overflow-hidden ">
+              <img src="./images/r4.jpg" alt="On-demand driver" 
+                   class="w-full rounded-lg h-32 object-cover sm:h-36 md:h-40">
+              <p class="text-center text-sm font-semibold sm:text-base md:p-4">On Demand Driver</p>
+          </div>
       </div>
-      <!-- REcommended end -->
     </section>
     <!-- Services gallery end -->
 
     <!-- Why choose us section start -->
-    <section class="why-choose-us-area px-55 mt-20 mb-1 bg-[#fafbfc]">
-      <div class="why-choose-us-container py-12">
-        <div class="why-choose-us-heading flex items-center">
-          <div class="hline w-8 h-[1px] bg-black"></div>
-          <p class="pl-4 text-sm font-medium">WHY CHOOSE US</p>
-        </div>
-        <p class="font-semibold text-3xl py-6">
-          Because we care about your safety..
-        </p>
-        <div class="grid grid-cols-2">
-          <div class="grid grid-cols-2 grid-rows-2 gap-6 px-6">
-            <div
-              class="why-choose-us-services flex items-center bg-white px-8 shadow-sm rounded-lg"
-            >
-              <img src="./images/f1.jpg" alt="" class="w-16" />
-              <h1 class="px-4">Ensuring Masks</h1>
-            </div>
-            <div
-              class="why-choose-us-services flex items-center bg-white px-8 shadow-sm rounded-lg"
-            >
-              <img src="./images/f2.jpg" alt="" class="w-16" />
-              <h1 class="px-4">24/7 Support</h1>
-            </div>
-            <div
-              class="why-choose-us-services flex items-center bg-white px-8 shadow-sm rounded-lg"
-            >
-              <img src="./images/f3.jpg" alt="" class="w-16" />
-              <h1 class="px-4">Sanitizing Hands & Equipment</h1>
-            </div>
-            <div
-              class="why-choose-us-services flex items-center bg-white px-8 shadow-sm rounded-lg"
-            >
-              <img src="./images/f4.jpg" alt="" class="w-16" />
-              <h1 class="px-4">Ensuring Gloves</h1>
-            </div>
+    <section class="bg-[#fafbfc] py-12 px-4 sm:px-6 lg:px-45">
+      <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="flex items-center">
+              <div class="w-8 h-[1px] bg-black"></div>
+              <p class="pl-4 text-sm font-medium">WHY CHOOSE US</p>
           </div>
-          <div>
-            <img src="./images/why-choose-us.jpg" alt="" />
+          
+          <!-- Section Title -->
+          <h2 class="font-semibold text-2xl sm:text-3xl py-6">
+              Because we care about your safety..
+          </h2>
+          
+          <!-- Content Grid with 40/60 split -->
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8">
+              <!-- Services Grid (2/5 = 40%) -->
+              <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                  <!-- Service 1 -->
+                  <div class="bg-white p-4 sm:p-6 shadow-sm rounded-lg flex items-center">
+                      <img src="./images/f1.jpg" alt="Ensuring Masks" class="w-12 sm:w-16 flex-shrink-0">
+                      <h3 class="pl-3 sm:pl-4 text-sm sm:text-base">Ensuring Masks</h3>
+                  </div>
+                  
+                  <!-- Service 2 -->
+                  <div class="bg-white p-4 sm:p-6 shadow-sm rounded-lg flex items-center">
+                      <img src="./images/f2.jpg" alt="24/7 Support" class="w-12 sm:w-16 flex-shrink-0">
+                      <h3 class="pl-3 sm:pl-4 text-sm sm:text-base">24/7 Support</h3>
+                  </div>
+                  
+                  <!-- Service 3 -->
+                  <div class="bg-white p-4 sm:p-6 shadow-sm rounded-lg flex items-center">
+                      <img src="./images/f3.jpg" alt="Sanitizing Hands & Equipment" class="w-12 sm:w-16 flex-shrink-0">
+                      <h3 class="pl-3 sm:pl-4 text-sm sm:text-base">Sanitizing Hands & Equipment</h3>
+                  </div>
+                  
+                  <!-- Service 4 -->
+                  <div class="bg-white p-4 sm:p-6 shadow-sm rounded-lg flex items-center">
+                      <img src="./images/f4.jpg" alt="Ensuring Gloves" class="w-12 sm:w-16 flex-shrink-0">
+                      <h3 class="pl-3 sm:pl-4 text-sm sm:text-base">Ensuring Gloves</h3>
+                  </div>
+              </div>
+              
+              <!-- Image Column (3/5 = 60%) -->
+              <div class="lg:col-span-3 flex items-center">
+                  <img src="./images/why-choose-us.jpg" alt="Why choose us illustration" 
+                       class="w-full h-auto rounded-lg object-cover shadow-sm lg:h-full lg:max-h-[400px]">
+              </div>
           </div>
-        </div>
       </div>
     </section>
     <!-- Why choose us section end -->
@@ -226,20 +293,20 @@
     <!-- Stats Counter start -->
     <section class="py-4 bg-[#f4f5f8]">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-8 text-center">
           <!-- Stat 1 -->
           <div class="p-6">
-            <p class="text-5xl font-semibold text-gray-600">15,000+</p>
+            <p class="text-4xl lg:text-5xl font-semibold text-gray-600">15,000+</p>
             <p class="mt-2 text-gray-600">Service Providers</p>
           </div>
           <!-- Stat 2 -->
           <div class="p-6">
-            <p class="text-5xl font-semibold text-gray-600">2,00,000+</p>
+            <p class="text-4xl lg:text-5xl font-semibold text-gray-600">2,00,000+</p>
             <p class="mt-2 text-gray-600">Orders Served</p>
           </div>
           <!-- Stat 3 -->
           <div class="p-6">
-            <p class="text-5xl font-semibold text-gray-600">1,00,000+</p>
+            <p class="text-4xl lg:text-5xl font-semibold text-gray-600">1,00,000+</p>
             <p class="mt-2 text-gray-600">5-Star Reviews</p>
           </div>
         </div>
@@ -262,7 +329,7 @@
         <div class="w-full lg:w-1/2">
           <div class="aspect-w-16 aspect-h-9">
             <iframe
-              class="w-full h-full min-h-[315px]"
+              class="w-full h-full rounded-lg min-h-[315px]"
               src="https://www.youtube.com/embed/OMW0BfVYSOI?si=_ItCDUw1xUklCR1t"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -329,49 +396,48 @@
     <!-- How it works end -->
 
     <!-- Happy faces start -->
-    <section class="happy-faces-area px-55 bg-[#f4f5f8]">
-      <div class="flex items-center pt-12">
-        <div class="w-8 h-[1px] bg-black"></div>
+    <section class="happy-faces-area bg-[#f4f5f8] px-4 py-8 lg:px-45">
+      <div class="flex items-center">
+        <div class="w-8 h-px bg-black"></div>
         <p class="pl-4 text-sm font-medium">SOME HAPPY FACES</p>
       </div>
-      <h2 class="font-semibold text-3xl py-6">
+      <h2 class="text-2xl font-semibold py-6 md:text-3xl">
         Real Happy Customers, Real Stories
       </h2>
-
-      <div class="flex items-center">
-        <div class="px-8">
+    
+      <div class="flex flex-col gap-6 md:flex-row md:items-center md:px-8">
+        <div class="flex-1">
           <!-- Quote Icon -->
-          <div class="text-[#2b2f2f] text-6xl">“</div>
-
+          <div class="text-[#2b2f2f] text-5xl md:text-6xl">“</div>
+    
           <!-- Testimonial Text -->
-
-          <div class="mt-[-40px]">
-            <p class="text-xl text-gray-700 mb-6 indent-8">
+          <div class="mt-[-32px] md:mt-[-40px]">
+            <p class="text-lg text-gray-700 mb-6 indent-8 md:text-xl">
               Such service platforms are available in other countries. I've
               personally used those when I was abroad. I'm very pleased that
               such a portal is available here in Bangladesh as well. Thank you
               Sheba.Xyz.
             </p>
           </div>
-
+    
           <!-- Author Info -->
           <div>
             <p class="font-semibold text-gray-900">- Zabeen Yusuf Nur</p>
             <p class="text-sm text-gray-900 py-4">IT Consultant, Australia</p>
           </div>
         </div>
-
-        <div class="my-6">
+    
+        <div class="my-6 aspect-w-16 aspect-h-12 w-full lg:w-[560px] h-[315px]">
           <iframe
-            width="560"
-            height="315"
+            class="w-full h-full rounded-lg shadow-md"
             src="https://www.youtube.com/embed/Ey0ESUxWTL0?si=pIPIwn7SxtwN765T"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
+        </div>
+
         </div>
       </div>
     </section>
@@ -448,7 +514,7 @@
     <!-- Footer Start -->
     <footer class="footer-area bg-[#ebecef]">
       <div class="footer-top grid grid-cols-5 mx-50 pt-10 pb-20 text-sm">
-        <div >
+        <div>
           <h1 class="font-bold pb-4">CONTACT</h1>
           <div class="py-3">
             <p>16516 / 8809643240103</p>
@@ -499,12 +565,8 @@
             <div><img src="./images/play-store.png" alt="" class="w-45" /></div>
             <div><img src="./images/app-store.png" alt="" class="w-45" /></div>
           </div>
-        <div>
-
-        </div>   
+          <div></div>
         </div>
-
-    
       </div>
       <div class="footer-bottom bg-[#dfe0e3] py-6">
         <p class="text-center">
