@@ -444,83 +444,99 @@
     <!-- Happy faces end -->
 
     <!-- Download app start -->
-    <section class="download-app-area py-8">
-      <div class="flex items-center mx-55">
-        <div><img src="./images/app-download.png" alt="" /></div>
-        <div>
-          <div class="flex items-center pt-12">
-            <div class="w-8 h-[1px] bg-black"></div>
-            <p class="pl-4 text-md font-medium">Download Our App</p>
-          </div>
-          <h2 class="font-semibold text-3xl py-6">
-            Any Service, Any Time, Anywhere.
-          </h2>
-          <p class="pb-10">
-            Give us your mobile number. You’ll get an SMS with the app download
-            link.
-          </p>
-
-          <div
-            class="input-mobile-number rounded-md border-1 border-gray-300 h-12 w-[560px]"
-          >
-            <input
-              type="number"
-              placeholder="Type your mobile number"
-              class="number-field focus:outline-none p-2 ml-6 w-[360px]"
-            />
-            <button
-              class="bg-[#DB6D9B] py-3 px-9 h-12 ml-[2px] rounded-r-md text-white font-semibold"
-            >
-              Get the app
-            </button>
+    <section class="download-app-area px-4 py-12 pb-20 sm:px-6 lg:px-40">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
+          <!-- App Image (Mobile: First, Desktop: Left) -->
+          <div class="w-full lg:w-1/2 flex justify-center">
+              <img src="./images/app-download.png" alt="App preview" class="max-w-xs md:max-w-md lg:max-w-full">
           </div>
 
-          <div class="flex gap-x-6 my-8">
-            <div><img src="./images/play-store.png" alt="" class="w-45" /></div>
-            <div><img src="./images/app-store.png" alt="" class="w-45" /></div>
+          <!-- Content (Mobile: Second, Desktop: Right) -->
+          <div class="w-full lg:w-1/2">
+              <!-- Section Header -->
+              <div class="flex items-center pt-4 lg:pt-12">
+                  <div class="w-8 h-[1px] bg-black"></div>
+                  <p class="pl-4 text-sm sm:text-md font-medium">Download Our App</p>
+              </div>
+              
+              <!-- Title -->
+              <h2 class="font-semibold text-2xl sm:text-3xl py-4 lg:py-6">
+                  Any Service, Any Time, Anywhere.
+              </h2>
+              
+              <!-- Description -->
+              <p class="pb-6 sm:pb-10 text-sm sm:text-base">
+                  Give us your mobile number. You'll get an SMS with the app download link.
+              </p>
+
+              <!-- Mobile Input Field -->
+              <div class="flex flex-col sm:flex-row gap-2 sm:gap-0 w-full">
+                  <input
+                      type="tel"
+                      placeholder="Type your mobile number"
+                      class="flex-grow p-3 sm:p-4 border border-gray-300 rounded-l-md sm:rounded-r-none focus:outline-none"
+                  />
+                  <button
+                      class="bg-[#DB6D9B] py-3 px-6 sm:px-8 text-white font-semibold rounded-r-md sm:rounded-l-none whitespace-nowrap"
+                  >
+                      Get the app
+                  </button>
+              </div>
+
+              <!-- App Store Buttons -->
+              <div class="flex flex-wrap gap-4 my-6 sm:my-8">
+                  <a href="#" class="block max-w-[160px] sm:max-w-[180px]">
+                      <img src="./images/play-store.png" alt="Get on Google Play" class="w-full h-auto">
+                  </a>
+                  <a href="#" class="block max-w-[160px] sm:max-w-[180px]">
+                      <img src="./images/app-store.png" alt="Download on the App Store" class="w-full h-auto">
+                  </a>
+              </div>
           </div>
-        </div>
       </div>
     </section>
     <!-- Download app end -->
 
     <!-- Contact start -->
-    <section class="contact-area bg-[#f4f5f8] h-[206px]">
-      <div class="flex mx-55 justify-evenly">
-        <div class="py-10">
-          <h1 class="font-semibold py-4 text-2xl">
+    <section class="contact-area bg-[#f4f5f8] lg:px-40">
+      <div class="mx-4 flex flex-col items-center md:mx-14 md:flex-row md:justify-around">
+        <div class="text-center md:text-left">
+          <h1 class="text-xl font-semibold py-4 md:text-2xl">
             Can’t find your desired service? Let us know 24/7 in 16516.
           </h1>
-          <div class="py-2">
+          <div class="flex flex-col gap-4 md:flex-row md:gap-4">
             <button
-              class="bg-[#c71f66] py-3 px-8 text-white font-semibold rounded-lg"
+              class="bg-[#c71f66] py-3 px-6 text-white font-semibold rounded-lg"
             >
               Request a service
             </button>
             <button
-              class="py-3 px-16 ml-2 text-[#c71f66] border-1 font-semibold rounded-lg hover:bg-[#c71f66] hover:text-white"
+              class="py-3 px-16 text-[#c71f66] border border-[#c71f66] font-semibold rounded-lg hover:bg-[#c71f66] hover:text-white"
             >
-              <i class="fa-solid fa-phone mr-4"></i>16516
+              <i class="fa-solid fa-phone mr-2"></i>16516
             </button>
           </div>
         </div>
-        <div>
-          <img src="./images/service-request.png" alt="" class="mt-[-117px]" />
+        <div class="relative lg:-mt-30">
+          <img
+            src="./images/service-request.png"
+            alt="Service request illustration"
+            class="w-50 pt-4 lg:w-full h-auto "
+          />
         </div>
       </div>
     </section>
     <!-- Contact end -->
 
     <!-- Footer Start -->
-    <footer class="footer-area bg-[#ebecef]">
-      <div class="footer-top grid grid-cols-5 mx-50 pt-10 pb-20 text-sm">
-        <div>
+    <footer class="footer-area bg-[#ebecef] ">
+      <div class="footer-top mx-4 pt-8 pb-12 text-sm md:mx-12 md:grid md:grid-cols-5 md:gap-8 lg:px-40">
+        <div class="mb-8 md:mb-0">
           <h1 class="font-bold pb-4">CONTACT</h1>
           <div class="py-3">
             <p>16516 / 8809643240103</p>
             <p>info@sheba.xyz</p>
           </div>
-
           <div>
             <h1 class="text-gray-700">Corporate Address</h1>
             <p>
@@ -528,24 +544,23 @@
               Block: H, Banani, Dhaka
             </p>
           </div>
-
           <div>
             <h1 class="font-bold py-3">Trade License No</h1>
             <p>TRAD/DNCC/145647/2022</p>
           </div>
         </div>
-        <div>
+        <div class="mb-8 md:mb-0">
           <h1 class="font-bold pb-4">OTHER PAGES</h1>
           <ul>
             <li class="py-2"><a href="">Blog</a></li>
             <li class="py-2"><a href="">Help</a></li>
             <li class="py-2"><a href="">Terms of use</a></li>
             <li class="py-2"><a href="">Privacy Policy</a></li>
-            <li><a href="">Refund & Return Policy</a></li>
+            <li class="py-2"><a href="">Refund & Return Policy</a></li>
             <li class="py-2"><a href="">Sitemap</a></li>
           </ul>
         </div>
-        <div>
+        <div class="mb-8 md:mb-0">
           <h1 class="font-bold pb-4">COMPANY</h1>
           <ul>
             <li class="py-2"><a href="">sManager</a></li>
@@ -554,26 +569,26 @@
             <li class="py-2"><a href="">sBondhu</a></li>
           </ul>
         </div>
-        <div class="col-span-2 text-right">
+        <div class="col-span-2 text-left md:text-right">
           <h1 class="font-bold pb-4">DOWNLOAD OUR APP</h1>
-          <p>
+          <p class="mb-6">
             Tackle your to-do list wherever you are with our mobile app & make
             your life easy.
           </p>
-
-          <div class="flex gap-x-6 my-8 pl-14">
-            <div><img src="./images/play-store.png" alt="" class="w-45" /></div>
-            <div><img src="./images/app-store.png" alt="" class="w-45" /></div>
+          <div class="flex flex-row gap-4 md:flex-row md:gap-6 md:justify-end">
+            <div>
+              <img src="./images/play-store.png" alt="Google Play Store" class="w-36" />
+            </div>
+            <div>
+              <img src="./images/app-store.png" alt="Apple App Store" class="w-36" />
+            </div>
           </div>
-          <div></div>
         </div>
       </div>
-      <div class="footer-bottom bg-[#dfe0e3] py-6">
+      <div class="footer-bottom bg-[#dfe0e3] py-6 ">
         <p class="text-center">
           Copyright © 2025
-          <a href="" class="text-blue-600 font-medium"
-            >Sheba Platform Limited</a
-          >
+          <a href="" class="text-blue-600 font-medium">Sheba Platform Limited</a>
           | All Rights Reserved
         </p>
       </div>
